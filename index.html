@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=640">
+
+    <link rel="stylesheet" href="stylesheets/core.css" media="screen">
+    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+
+    <script type="text/javascript" src="javascripts/modernizr.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('#main_content').headsmart()
+      })
+    </script>
+    <title>331 a3 by Ihcenech</title>
+  </head>
+
+  <body>
+    <a id="forkme_banner" href="https://github.com/Ihcenech/331_A3">View on GitHub</a>
+    <div class="shell">
+
+      <header>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <h1>331 a3</h1>
+            <h2></h2>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+      </header>
+
+      <section id="downloads">
+        <span class="inner">
+          <a href="https://github.com/Ihcenech/331_A3/zipball/master" class="zip"><em>download</em> .ZIP</a><a href="https://github.com/Ihcenech/331_A3/tarball/master" class="tgz"><em>download</em> .TGZ</a>
+        </span>
+      </section>
+
+
+      <span class="banner-fix"></span>
+
+
+      <section id="main_content">
+        <p>SOEN 331 : Introduction to Formal Methods for Software Engineering
+Assignment 3  : Extended Finite State Machines</p>
+
+<p>Note: Provide a diagram for each part of this assignment. It is advised you make copies of the diagrams as you renew them, to retain a history. You are required to provide all diagrams of each step. Therefore 5 diagrams. If you do not provide these diagrams, you will be penalized.</p>
+
+<p>Part I: Overall EFSM</p>
+
+<p>Part II: Refine init</p>
+
+<p>Part III: Refine monitor</p>
+
+<p>Part IV: Refine lockdown</p>
+
+<p>Part V: Refine error diagnosis (robust error handling)</p>
+
+<p>Part VI: Simulating your machine</p>
+
+<ol>
+<li><p>is_loop(Event, Guard) succeeds by nding a loop edge. We assume that an edge
+can be represented by a non-null event-guard pair.</p></li>
+<li><p>all_loops(Set) succeeds by returning a set of all loop edges.</p></li>
+<li><p>is_edge(Event, Guard) succeeds by nding an edge.</p></li>
+<li><p>size(Length) succeeds by returning the size of the entire EFSM (given by the number
+of its edges).</p></li>
+<li><p>is_link(Event, Guard) succeeds by nding a link edge.</p></li>
+<li><p>Rule all_superstates(Set) succeeds by nding all superstates in the EFSM.</p></li>
+<li><p>ancestor(Ancestor, Descendant) is a utility rule that succeeds by returning an an-
+cestor to a given state.</p></li>
+<li><p>inheritss_transitions(State, List) succeeds by returning all transitions inherited
+by a given state.</p></li>
+<li><p>all_states(L) succeeds by returning a list of all states.</p></li>
+<li><p>all_init_states(L) succeeds by returning a list of all starting states.</p></li>
+<li><p>get_starting_state(State) succeeds by returning the top-level starting state.</p></li>
+<li><p>state_is_reflexive(State) succeeds is State is reflexive.</p></li>
+<li><p>graph_is_reflexive succeeds if the entire EFSM is reflexive.</p></li>
+<li><p>get_guards(Ret) succeeds by returning a set of all guards.</p></li>
+<li>get_events(Ret) succeeds by returning a set of all events.</li>
+<li>get_actions(Ret) succeeds by returning a set of all actions.</li>
+<li>get_only_guarded(Ret) succeeds by returning state pairs that are associated by guards
+only.</li>
+<li>legal_events_of(State, L) succeeds by returning all legal event-guard pairs.</li>
+</ol>
+      </section>
+
+      <footer>
+        <span class="ribbon-outer">
+          <span class="ribbon-inner">
+            <p>this project by <a href="https://github.com/Ihcenech">Ihcenech</a> can be found on <a href="https://github.com/Ihcenech/331_A3">GitHub</a></p>
+          </span>
+          <span class="left-tail"></span>
+          <span class="right-tail"></span>
+        </span>
+        <p>Generated with <a href="https://pages.github.com">GitHub Pages</a> using Merlot</p>
+        <span class="octocat"></span>
+      </footer>
+
+    </div>
+
+    
+  </body>
+</html>
